@@ -1,0 +1,41 @@
+.main {
+    position: fixed; /* keeps the header at the top of the page */
+    width: 100%; /* header takes whole page width */
+    min-height: 60px; /* header height */
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headerItem {
+    cursor: pointer;
+    font-size: 24px;
+    color: #1f1f1f;
+    padding: 0 20px;
+    white-space: nowrap; /* keeps the text on one line */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+/* hides menu when screen is small */
+@media screen and (max-width: 768px) {
+    .menu {
+        /* hides menu */
+        display: none;
+    }
+    .right {
+        /* displays the right section properly on the right */
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
