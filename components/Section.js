@@ -24,7 +24,7 @@ export default function Section({ backgroundImage, header, description }) {
               CUSTOM ORDER
             </div>
             <div className={styles.button + " " + styles.rightButton}>
-              EXISTING INVENTORY
+              LEARN MORE
             </div>
           </div>
 
