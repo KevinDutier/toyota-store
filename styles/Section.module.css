@@ -14,7 +14,6 @@
 .itemText {
   /* applies to both h1 (header) and p (text) */
   text-align: center;
-  /* color: #e4e4e4; */
   color: #1f1f1f;
   padding-top: 14vh;
 }
@@ -63,9 +62,6 @@
 .leftButton {
   background-color: #e2001a;
   opacity: 0.8;
-}
-
-.rightButton {
 }
 
 .arrow {

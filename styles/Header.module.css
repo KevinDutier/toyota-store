@@ -8,7 +8,7 @@
   z-index: 3; /* displays header content (especially burger menu) above the rext and buttons */
 }
 
-.menu {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +19,12 @@
   cursor: pointer;
   font-size: 24px;
   color: #1f1f1f;
-  padding: 0 20px;
+  margin: 0 20px; /* horizontal space between the header items */
   white-space: nowrap; /* keeps the text on one line */
+  transition: 0.3s; /* how long it takes for the link to turn red */
+}
+.headerItem:hover {
+  color: #e2001a;
 }
 
 .right {
@@ -28,6 +32,7 @@
   align-items: center;
 }
 
+/* style applied to the content of the burger menu */
 .burgerMenu {
   position: fixed;
   top: 0;
@@ -37,14 +42,12 @@
   width: 300px;
   list-style: none;
   padding: 20px;
-  transition: transform 0.2s;
 }
 
 .closeIconContainer {
-  /* displays the close icon to the right of the menu */
+  /* displays the close icon qt the right of the menu */
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  text-align: end;
 }
 
 .closeIcon {
@@ -56,6 +59,10 @@
   font-size: 24px;
   padding: 16px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* adds a grey border below each burger item*/
+  transition: 0.25s; /* how long it takes for the link to turn red */
+}
+.burgerMenuItem:hover {
+  color: #e2001a;
 }
 
 /* hides menu when screen is small */

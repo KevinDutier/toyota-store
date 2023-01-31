@@ -5,21 +5,22 @@ import CloseIcon from "@material-ui/icons/Close";
 import { slide as Menu } from "react-burger-menu";
 import { useState } from "react";
 
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className={styles.main}>
+      {/* LEFT PART OF THE HEADER */}
       <div className={styles.left}>
         <Link href="./">
           <img className={styles.logo} src="toyota-logo.png" height="38" />
         </Link>
       </div>
 
-      <div className={styles.menu}>
-        <Link href="./" >
-          <p className={styles.headerItem} onClick={() => console.log("prius")}>Prius Prime</p>
+      {/* CENTER PART OF THE HEADER */}
+      <div className={styles.center}>
+        <Link href="./">
+          <p className={styles.headerItem}>Prius Prime</p>
         </Link>
         <Link href="./">
           <p className={styles.headerItem}>Rav4</p>
@@ -32,18 +33,34 @@ export default function Header() {
         </Link>
       </div>
 
+      {/* RIGHT SECTION OF THE HEADER */}
       <div className={styles.right}>
         <Link href="./">
           <p className={styles.headerItem}>Toyota account</p>
         </Link>
 
+        {/* burger menu icon */}
+        <MenuIcon
+          onClick={() => setMenuOpen(true)}
+          className={styles.headerItem}
+          style={{ transition: "0.25s" }} // time it takes for the icon to turn red on hover
+        />
+
+        {/* burger menu content (all the links and the Menu tag) */}
         <Menu
           right
           isOpen={menuOpen}
           className={styles.burgerMenu}
-          customBurgerIcon={<><MenuIcon /></>}
-          customCrossIcon={<CloseIcon className={styles.closeIcon} />}
+          customBurgerIcon={false}
+          customCrossIcon={false}
         >
+          <div className={styles.closeIconContainer}>
+            <CloseIcon
+              onClick={() => setMenuOpen(false)}
+              className={styles.headerItem}
+              style={{ transition: "0.25s" }} // time it takes for the icon to turn red on hover
+            />
+          </div>
           <Link href="./">
             <p className={styles.burgerMenuItem}>Prius Prime</p>
           </Link>
