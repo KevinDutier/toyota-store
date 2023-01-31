@@ -1,41 +1,72 @@
 .main {
-    position: fixed; /* keeps the header at the top of the page */
-    width: 100%; /* header takes whole page width */
-    min-height: 60px; /* header height */
-    display: flex;
-    align-items: center;
-    padding: 8px 20px;
+  position: fixed; /* keeps the header at the top of the page */
+  width: 100%; /* header takes whole page width */
+  min-height: 60px; /* header height */
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  z-index: 3; /* displays header content (especially burger menu) above the rext and buttons */
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .headerItem {
-    cursor: pointer;
-    font-size: 24px;
-    color: #1f1f1f;
-    padding: 0 20px;
-    white-space: nowrap; /* keeps the text on one line */
+  cursor: pointer;
+  font-size: 24px;
+  color: #1f1f1f;
+  padding: 0 20px;
+  white-space: nowrap; /* keeps the text on one line */
 }
 
 .right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.burgerMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #eeeeee;
+  width: 300px;
+  list-style: none;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.closeIconContainer {
+  /* displays the close icon to the right of the menu */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeIcon {
+  cursor: pointer;
+}
+
+.burgerMenuItem {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 16px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* adds a grey border below each burger item*/
 }
 
 /* hides menu when screen is small */
 @media screen and (max-width: 768px) {
-    .menu {
-        /* hides menu */
-        display: none;
-    }
-    .right {
-        /* displays the right section properly on the right */
-        width: 100%;
-        justify-content: flex-end;
-    }
+  .menu {
+    /* hides menu */
+    display: none;
+  }
+  .right {
+    /* displays the right section properly on the right */
+    width: 100%;
+    justify-content: flex-end;
+  }
 }

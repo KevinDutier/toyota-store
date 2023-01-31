@@ -5,7 +5,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Toyota clone</title>
+        <title>Toyota Store</title>
       </Head>
       <Component {...pageProps} />
     </>
