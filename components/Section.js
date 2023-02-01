@@ -21,15 +21,14 @@ export default function Section({ backgroundImage, header, description, id }) {
         <div className={styles.bottomContainer}>
           {/* buttonContainer contains the two buttons */}
           <div className={styles.buttonContainer}>
-            {/* <div className={styles.button + " " + styles.leftButton}>
-              CUSTOM ORDER
+            <div className={styles.button}>
+              Demo Drive
             </div>
-            <div className={styles.button + " " + styles.rightButton}>
-              LEARN MORE
-            </div> */}
-            <div className={styles.button + " " + styles.leftButton}>
-              LEARN MORE
-            </div>
+            <Link href="/model">
+              <div className={styles.button + " " + styles.rightButton}>
+                Learn More
+              </div>
+            </Link>
           </div>
 
           {/* arrow contains the arrow */}

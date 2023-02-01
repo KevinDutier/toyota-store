@@ -8,8 +8,8 @@ export default function Home() {
       <Section
         id="prius"
         backgroundImage="https://toyotaassets.scene7.com/is/image/toyota/PRP_MY20_0015_V004-1?wid=2000&fmt=jpg&fit=crop"
-        header="Prius Prime"
-        description="The hybrid reborn."
+        header="Prius"
+        description="The hybrid reinvented."
       />
       <Section
         id="supra"
@@ -21,13 +21,13 @@ export default function Home() {
         id="highlander"
         backgroundImage="https://preview1.assetsadobe.com/is/image/toyota/HLD_MY23_0003_V001?wid=2000&fmt=jpg&fit=crop"
         header="Highlander"
-        description="Drive with purpose."
+        description="Venture ahead."
       />
       <Section
-        id="bz4x"
-        backgroundImage="https://toyotaassets.scene7.com/is/image/toyota/BZ4_MY23_0027_V001_1?wid=2000&fmt=jpg&fit=crop"
-        header="bZ4X"
-        description="Take charge of your day."
+        id="c-hr"
+        backgroundImage="https://toyotaassets.scene7.com/is/image/toyota/CHR_MY22_0005_V001?wid=2000&fmt=jpg&fit=crop"
+        header="C-HR"
+        description="Drive with purpose."
       />
     </>
   );

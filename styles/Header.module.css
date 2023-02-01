@@ -72,8 +72,8 @@
 }
 
 /* hides menu when screen is small */
-@media screen and (max-width: 768px) {
-  .menu {
+@media screen and (max-width: 960px) {
+  .center {
     /* hides menu */
     display: none;
   }

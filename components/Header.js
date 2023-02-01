@@ -20,7 +20,7 @@ export default function Header() {
       {/* CENTRAL PART OF THE HEADER */}
       <div className={styles.center}>
         <Link href="#prius">
-          <p className={styles.headerItem} >Prius Prime</p>
+          <p className={styles.headerItem} >Prius</p>
         </Link>
         <Link href="#supra">
           <p className={styles.headerItem}>Supra</p>
@@ -28,8 +28,8 @@ export default function Header() {
         <Link href="#highlander">
           <p className={styles.headerItem}>Highlander</p>
         </Link>
-        <Link href="#bz4x">
-          <p className={styles.headerItem}>bZ4X</p>
+        <Link href="#c-hr">
+          <p className={styles.headerItem}>C-HR</p>
         </Link>
       </div>
 
@@ -62,7 +62,7 @@ export default function Header() {
             />
           </div>
           <Link href="#prius">
-            <p className={styles.burgerMenuItem}>Prius Prime</p>
+            <p className={styles.burgerMenuItem}>Prius</p>
           </Link>
           <Link href="#supra">
             <p className={styles.burgerMenuItem}>Supra</p>
@@ -70,8 +70,8 @@ export default function Header() {
           <Link href="#highlander">
             <p className={styles.burgerMenuItem}>Highlander</p>
           </Link>
-          <Link href="#bz4x">
-            <p className={styles.burgerMenuItem}>bZ4X</p>
+          <Link href="#c-hr">
+            <p className={styles.burgerMenuItem}>C-HR</p>
           </Link>
         </Menu>
       </div>
