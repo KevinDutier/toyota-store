@@ -19,7 +19,6 @@ body {
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-html {
-  /* scrolls smoothly when user clicks on a link */
+/* html {
   scroll-behavior: smooth;
-}
+} */

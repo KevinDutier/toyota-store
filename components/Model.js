@@ -1,23 +1,15 @@
-// import styles from "../styles/Section.module.css";
+import Header from "./Header";
 import ModelImage from "./ModelImage";
 import ModelInfo from "./ModelInfo";
 import ModelOrderNow from "./ModelOrderNow";
 
-function Model() {
+function Model(props) {
   return (
     <>
-      <ModelImage
-        backgroundImage="https://toyotaassets.scene7.com/is/image/toyota/PRP_MY20_0009_V001-1?wid=2000&fmt=jpg&fit=crop"
-        header="Prius"
-        description="All-new EV"
-      />
+      <Header />
+      <ModelImage model={props.model} />
       <ModelInfo />
-      <ModelImage
-        backgroundImage="https://toyotaassets.scene7.com/is/image/toyota/PRP_MY20_0016_V002-1?wid=2000&fmt=jpg&fit=crop"
-        header="Prius"
-        description="All-new EV"
-      />
-      <ModelOrderNow model="Prius" />
+      <ModelOrderNow model={props.model} />
     </>
   );
 }

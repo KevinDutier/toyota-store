@@ -13,23 +13,23 @@ export default function Header() {
       {/* LEFT PART OF THE HEADER */}
       <div className={styles.left}>
         <Link href="./">
-          <img className={styles.logo} src="toyota-logo.png" height="38" />
+          <img className={styles.logo} src="toyota-logo.png" />
         </Link>
       </div>
 
       {/* CENTRAL PART OF THE HEADER */}
       <div className={styles.center}>
-        <Link href="#prius">
+        <Link href="./model?param=Prius">
           <p className={styles.headerItem} >Prius</p>
         </Link>
-        <Link href="#supra">
+        <Link href="./model?param=Supra">
           <p className={styles.headerItem}>Supra</p>
         </Link>
-        <Link href="#highlander">
-          <p className={styles.headerItem}>Highlander</p>
-        </Link>
-        <Link href="#c-hr">
+        <Link href="./model?param=C-HR">
           <p className={styles.headerItem}>C-HR</p>
+        </Link>
+        <Link href="./model?param=Highlander">
+          <p className={styles.headerItem}>Highlander</p>
         </Link>
       </div>
 
@@ -61,17 +61,17 @@ export default function Header() {
               style={{ transition: "0.25s", color: "#1f1f1f" }} // time it takes for the icon to turn red on hover
             />
           </div>
-          <Link href="#prius">
+          <Link href="./model?param=Prius">
             <p className={styles.burgerMenuItem}>Prius</p>
           </Link>
-          <Link href="#supra">
+          <Link href="./model?param=Supra">
             <p className={styles.burgerMenuItem}>Supra</p>
           </Link>
-          <Link href="#highlander">
-            <p className={styles.burgerMenuItem}>Highlander</p>
-          </Link>
-          <Link href="#c-hr">
+          <Link href="./model?param=C-HR">
             <p className={styles.burgerMenuItem}>C-HR</p>
+          </Link>
+          <Link href="./model?param=Highlander">
+            <p className={styles.burgerMenuItem}>Highlander</p>
           </Link>
         </Menu>
       </div>

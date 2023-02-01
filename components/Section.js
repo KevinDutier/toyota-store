@@ -1,18 +1,26 @@
 import styles from "../styles/Section.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Fade from "react-reveal/Fade";
 
-export default function Section({ backgroundImage, header, description, id }) {
+export default function Section( props ) {
+// export default function Section({ backgroundImage, header, description, id }) {
+  const router = useRouter();
+
+  const toModelPage = (props) => {
+    router.push({ pathname: "./model", query: { param: props.header } });
+  };
+
   return (
     <div
       className={styles.wrap}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-      id={id}
+      style={{ backgroundImage: `url(${props.backgroundImage})` }}
+      id={props.id}
     >
       <Fade bottom>
           <div className={styles.itemText}>
-            <h1 style={{color: "#f1f1f1"}}>{header}</h1>
-            <p style={{color: "#f1f1f1"}}>{description}</p>
+            <h1 style={{color: "#f1f1f1"}}>{props.header}</h1>
+            <p style={{color: "#f1f1f1"}}>{props.description}</p>
           </div>
       </Fade>
 
@@ -24,14 +32,11 @@ export default function Section({ backgroundImage, header, description, id }) {
             <div className={styles.button}>
               Demo Drive
             </div>
-            <Link href="/model">
-              <div className={styles.button + " " + styles.rightButton}>
+              <div className={styles.button + " " + styles.rightButton} onClick={() => toModelPage(props)}>
                 Learn More
               </div>
-            </Link>
           </div>
 
-          {/* arrow contains the arrow */}
           <div className={styles.arrow}>
             <img src="down-arrow.png" height={44} />
           </div>

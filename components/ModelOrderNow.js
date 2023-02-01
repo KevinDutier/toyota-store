@@ -1,6 +1,14 @@
 import styles from "../styles/ModelOrderNow.module.css";
+import { useEffect, useState } from "react";
 
 function ModelOrderNow({ model }) {
+  const [image, setImage] = useState(undefined);
+
+  useEffect(() => {
+    // sets the car image according to the model selected by the user
+    setImage(<img src={`${model}/order-now.png`} />)
+  }, [])
+  
   return (
     <div className={styles.wrap}>
       <div className={styles.main}>
@@ -13,7 +21,7 @@ function ModelOrderNow({ model }) {
             </div>
           </div>
         </div>
-        <img src="prius/prius-order-now.png" />
+        {image}
       </div>
     </div>
   );

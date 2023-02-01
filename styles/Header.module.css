@@ -8,6 +8,11 @@
   z-index: 3; /* displays header content (especially burger menu) above the rext and buttons */
 }
 
+.logo {
+  cursor: pointer;
+  height: 38px;
+}
+
 .center {
   display: flex;
   justify-content: center;

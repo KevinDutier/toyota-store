@@ -18,16 +18,16 @@ export default function Home() {
         description="Shift it up a notch."
       />
       <Section
-        id="highlander"
-        backgroundImage="https://preview1.assetsadobe.com/is/image/toyota/HLD_MY23_0003_V001?wid=2000&fmt=jpg&fit=crop"
-        header="Highlander"
-        description="Venture ahead."
-      />
-      <Section
         id="c-hr"
         backgroundImage="https://toyotaassets.scene7.com/is/image/toyota/CHR_MY22_0005_V001?wid=2000&fmt=jpg&fit=crop"
         header="C-HR"
         description="Drive with purpose."
+      />
+      <Section
+        id="highlander"
+        backgroundImage="https://preview1.assetsadobe.com/is/image/toyota/HLD_MY23_0003_V001?wid=2000&fmt=jpg&fit=crop"
+        header="Highlander"
+        description="Venture ahead."
       />
     </>
   );
