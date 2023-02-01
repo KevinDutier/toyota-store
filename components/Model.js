@@ -10,7 +10,7 @@ function Model(props) {
       <Header />
       <ModelImage model={props.model} />
       <ModelInfo />
-      <ModelOrderNow model={props.model} />
+      {/* <ModelOrderNow model={props.model} /> */}
       <About />
     </>
   );
