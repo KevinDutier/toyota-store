@@ -82,7 +82,7 @@
     /* hides menu */
     display: none;
   }
-  .right p {
+  .right .toyotaAccount {
     display: none;
   }
   .right {
