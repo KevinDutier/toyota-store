@@ -47,8 +47,12 @@
   background-color: #1f1f1f;
 }
 
-@media screen and (max-width: 1000px) {
-  /* if screen is below 1000px, displays text and images vertically rather than horizontally */
+.image {
+  min-width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* if screen is below 1200px, displays text and images vertically rather than horizontally */
   .main {
     display: flex;
     flex-direction: column;

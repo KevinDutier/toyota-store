@@ -6,7 +6,7 @@ function ModelOrderNow({ model }) {
 
   useEffect(() => {
     // sets the car image according to the model selected by the user
-    setImage(<img src={`${model}/order-now.png`} />)
+    setImage(<img src={`${model}/order-now.png`} className={styles.image} />)
   }, [])
   
   return (
