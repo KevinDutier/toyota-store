@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Section from "./Section";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         header="Highlander"
         description="Venture ahead."
       />
+      <About />
     </>
   );
 }

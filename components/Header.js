@@ -36,7 +36,7 @@ export default function Header() {
       {/* RIGHT SECTION OF THE HEADER */}
       <div className={styles.right}>
         <Link href="./">
-          <p className={styles.headerItem}>Toyota account</p>
+          <p className={styles.headerItem}>Toyota Account</p>
         </Link>
 
         {/* burger menu icon */}

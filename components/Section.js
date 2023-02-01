@@ -1,10 +1,13 @@
 import styles from "../styles/Section.module.css";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import Fade from "react-reveal/Fade";
 
-export default function Section( props ) {
-// export default function Section({ backgroundImage, header, description, id }) {
+// popup imports
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+
+export default function Section(props) {
+  // export default function Section({ backgroundImage, header, description, id }) {
   const router = useRouter();
 
   const toModelPage = (props) => {
@@ -18,23 +21,33 @@ export default function Section( props ) {
       id={props.id}
     >
       <Fade bottom>
-          <div className={styles.itemText}>
-            <h1 style={{color: "#f1f1f1"}}>{props.header}</h1>
-            <p style={{color: "#f1f1f1"}}>{props.description}</p>
-          </div>
+        <div className={styles.itemText}>
+          <h1 style={{ color: "#f1f1f1" }}>{props.header}</h1>
+          <p style={{ color: "#f1f1f1" }}>{props.description}</p>
+        </div>
       </Fade>
 
       {/* bottomContainer contains buttons and arrow */}
-      <Fade bottom >
+      <Fade bottom>
         <div className={styles.bottomContainer}>
           {/* buttonContainer contains the two buttons */}
           <div className={styles.buttonContainer}>
-            <div className={styles.button}>
-              Demo Drive
+            <Popup
+              trigger={() => (
+                <div className={styles.button}>Demo Drive</div>
+              )}
+              position="top center"
+              closeOnDocumentClick
+            >
+              <p style={{ textAlign: "center" }}>Coming soon !</p>
+            </Popup>
+
+            <div
+              className={styles.button + " " + styles.rightButton}
+              onClick={() => toModelPage(props)}
+            >
+              Learn More
             </div>
-              <div className={styles.button + " " + styles.rightButton} onClick={() => toModelPage(props)}>
-                Learn More
-              </div>
           </div>
 
           <div className={styles.arrow}>
