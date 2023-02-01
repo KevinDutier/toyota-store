@@ -1,12 +1,12 @@
 import styles from "../styles/Header.module.css";
 import Link from "next/link";
+import { useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { slide as Menu } from "react-burger-menu";
-import { useState } from "react";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // determines whether burger menu is open or not
 
   return (
     <div className={styles.main}>
@@ -17,19 +17,19 @@ export default function Header() {
         </Link>
       </div>
 
-      {/* CENTER PART OF THE HEADER */}
+      {/* CENTRAL PART OF THE HEADER */}
       <div className={styles.center}>
-        <Link href="./">
-          <p className={styles.headerItem}>Prius Prime</p>
+        <Link href="#prius">
+          <p className={styles.headerItem} >Prius Prime</p>
         </Link>
-        <Link href="./">
-          <p className={styles.headerItem}>Rav4</p>
+        <Link href="#supra">
+          <p className={styles.headerItem}>Supra</p>
         </Link>
-        <Link href="./">
-          <p className={styles.headerItem}>Tacoma</p>
+        <Link href="#highlander">
+          <p className={styles.headerItem}>Highlander</p>
         </Link>
-        <Link href="./">
-          <p className={styles.headerItem}>Civic-R</p>
+        <Link href="#bz4x">
+          <p className={styles.headerItem}>bZ4X</p>
         </Link>
       </div>
 
@@ -58,20 +58,20 @@ export default function Header() {
             <CloseIcon
               onClick={() => setMenuOpen(false)}
               className={styles.headerItem}
-              style={{ transition: "0.25s" }} // time it takes for the icon to turn red on hover
+              style={{ transition: "0.25s", color: "#1f1f1f" }} // time it takes for the icon to turn red on hover
             />
           </div>
-          <Link href="./">
+          <Link href="#prius">
             <p className={styles.burgerMenuItem}>Prius Prime</p>
           </Link>
-          <Link href="./">
-            <p className={styles.burgerMenuItem}>Rav4</p>
+          <Link href="#supra">
+            <p className={styles.burgerMenuItem}>Supra</p>
           </Link>
-          <Link href="./">
-            <p className={styles.burgerMenuItem}>Tacoma</p>
+          <Link href="#highlander">
+            <p className={styles.burgerMenuItem}>Highlander</p>
           </Link>
-          <Link href="./">
-            <p className={styles.burgerMenuItem}>Civic-R</p>
+          <Link href="#bz4x">
+            <p className={styles.burgerMenuItem}>bZ4X</p>
           </Link>
         </Menu>
       </div>

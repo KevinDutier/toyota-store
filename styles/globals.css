@@ -9,8 +9,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-
-
   
   /* disabling text select on text, buttons, etc */
   -webkit-touch-callout: none; /* iOS Safari */
@@ -19,4 +17,9 @@ body {
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+html {
+  /* scrolls smoothly when user clicks on a link */
+  scroll-behavior: smooth;
 }

@@ -5,7 +5,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Toyota Store</title>
+        <title>Toyota</title>
       </Head>
       <Component {...pageProps} />
     </>

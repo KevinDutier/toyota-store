@@ -18,13 +18,15 @@
 .headerItem {
   cursor: pointer;
   font-size: 24px;
-  color: #1f1f1f;
+  /* color: #1f1f1f; */
+  color: #f1f1f1;
   margin: 0 20px; /* horizontal space between the header items */
   white-space: nowrap; /* keeps the text on one line */
   transition: 0.3s; /* how long it takes for the link to turn red */
 }
 .headerItem:hover {
   color: #e2001a;
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 .right {
@@ -52,6 +54,10 @@
 
 .closeIcon {
   cursor: pointer;
+}
+.closeIcon:hover {
+  color: #e2001a;
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 .burgerMenuItem {
