@@ -7,7 +7,7 @@ function ModelImage({ model }) {
   const [description, setDescription] = useState(undefined);
 
   useEffect(() => {
-    // on page load, change background image and description according to the car model
+    // on page load, change background image and description depending on the car model
     if (model === "Prius") {
       setBackgroundImage(
         "https://toyotaassets.scene7.com/is/image/toyota/PRP_MY20_0009_V001-1?wid=2000&fmt=jpg&fit=crop"
@@ -17,7 +17,7 @@ function ModelImage({ model }) {
       setBackgroundImage(
         "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0012_V001-1?wid=2000&fmt=jpg&fit=crop"
       );
-      setDescription("Street legal, cuircuit ready.");
+      setDescription("Street legal, circuit ready.");
     } else if (model === "C-HR") {
       setBackgroundImage(
         "https://toyotaassets.scene7.com/is/image/toyota/CHR_MY21_0002_V001?wid=2000&fmt=jpg&fit=crop"
