@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
 
 function ModelImage({ model }) {
-  const [backgroundImage, setBackgroundImage] = useState(undefined);
-  const [description, setDescription] = useState(undefined);
+  const [backgroundImage, setBackgroundImage] = useState(null);
+  const [description, setDescription] = useState(null);
 
   useEffect(() => {
     // on page load, change background image and description depending on the car model
