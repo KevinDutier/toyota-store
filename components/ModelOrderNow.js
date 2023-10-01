@@ -2,7 +2,7 @@ import styles from "../styles/ModelOrderNow.module.css";
 import { useEffect, useState } from "react";
 
 function ModelOrderNow({ model }) {
-  const [image, setImage] = useState(undefined);
+  const [image, setImage] = useState(null);
 
   useEffect(() => {
     // sets the car image according to the model selected by the user

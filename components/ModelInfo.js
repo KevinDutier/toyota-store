@@ -8,7 +8,7 @@ function ModelInfo() {
         <div className={styles.container}>
           <Fade bottom>
             <img
-              src="https://preview1.assetsadobe.com/is/image/toyota/HLD_MY23_0002_V001?wid=1296&fmt=jpg&fit=crop&qlt=90"
+              src="Common/connect.png"
               className={styles.image}
             />
             <div className={styles.textContainer}>
@@ -31,7 +31,7 @@ function ModelInfo() {
               </p>
             </div>
             <img
-              src="https://toyotaassets.scene7.com/is/image/toyota/086_MY22_0016_V001_1?wid=2000&fmt=jpg&fit=crop"
+              src="Common/wheel.png"
               className={styles.image}
             />
           </Fade>
@@ -40,7 +40,7 @@ function ModelInfo() {
         <div className={styles.container}>
           <Fade bottom>
             <img
-              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ab165f41-fa4e-4abe-b82a-51bdc295cf42/bvlatuR/std/1040x584/MS-Interior-Grid-D-Desktop"
+              src="Common/room.png"
               className={styles.image}
             />
             <div className={styles.textContainer}>
@@ -64,7 +64,7 @@ function ModelInfo() {
               </p>
             </div>
             <img
-              src="https://toyotaassets.scene7.com/is/image/toyota/PRP_MY20_0040_V001-1?wid=1296&fmt=jpg&fit=crop&qlt=90"
+              src="Common/modes.png"
               className={styles.image}
             />
           </Fade>

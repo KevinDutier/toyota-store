@@ -7,7 +7,6 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
 export default function Section(props) {
-  // export default function Section({ backgroundImage, header, description, id }) {
   const router = useRouter();
 
   const toModelPage = (props) => {

@@ -10,22 +10,22 @@ function ModelImage({ model }) {
     // on page load, change background image and description depending on the car model
     if (model === "Prius") {
       setBackgroundImage(
-        "https://toyotaassets.scene7.com/is/image/toyota/PRP_MY20_0009_V001-1?wid=2000&fmt=jpg&fit=crop"
+        "Prius/more.png"
       );
       setDescription("Take charge of your day.");
     } else if (model === "Supra") {
       setBackgroundImage(
-        "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0012_V001-1?wid=2000&fmt=jpg&fit=crop"
+        "Supra/more.png"
       );
       setDescription("Street legal, circuit ready.");
     } else if (model === "C-HR") {
       setBackgroundImage(
-        "https://toyotaassets.scene7.com/is/image/toyota/CHR_MY21_0002_V001?wid=2000&fmt=jpg&fit=crop"
+        "C-HR/more.png"
       );
       setDescription("Look sharper than ever.");
     } else if (model === "Highlander") {
       setBackgroundImage(
-        "https://preview1.assetsadobe.com/is/image/toyota/HLD_MY23_0018_V001-1?wid=2000&fmt=jpg&fit=crop"
+        "Highlander/more.png"
       );
       setDescription("Upgrade your adventures.");
     }

@@ -1,5 +1,3 @@
-import styles from "../styles/About.module.css";
-
 function About() {
   return (
     <div style={{ textAlign: "center" }}>
